@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.course_registration"
+    namespace = "com.example.course_reg_simp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.course_registration"
+        applicationId = "com.example.course_reg_simp"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -29,8 +29,8 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        jvmToolchain(11)
     }
     buildFeatures {
         compose = true
